@@ -16,11 +16,12 @@ for i in range(len(matriz)):
 
 num = int(input("\nDigite um número para multiplicar a diagonal principal : "))
 
-
-matriz[0][0] *= num
-matriz[1][1] *= num
-matriz[2][2] *= num
-
 print("\n==== Matriz ====")
+
+for lin in range(3):
+    for col in range(3):
+        if(lin == col):
+            matriz[lin][col] *= num
+
 for i in range(len(matriz)):
-    print(f"{matriz[i]}")
+    print(matriz[i])

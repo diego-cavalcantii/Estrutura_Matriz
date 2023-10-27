@@ -5,13 +5,11 @@
 '''
 
 matriz = []
-maior = 0
-menor = 0
 
 for lin in range(6):
     linha = []
     for col in range(3):
-        linha.append(int(input(f"Linha {lin} - Digite um número real : ")))
+        linha.append(float(input(f"Linha {lin} - Digite um número real : ")))
     matriz.append(linha)
 
 maior = matriz[0][0]
@@ -31,8 +29,6 @@ for lin in range(6):
 print("\n==== Matriz ====")
 for i in range(len(matriz)):
     print(f"{matriz[i]}")
-
-
 
 print(f"\nMaior número = {maior} - Linha = {linha_maior} - Coluna = {col_maior}")
 print(f"Menor número = {menor} - Linha = {linha_menor} - Coluna = {col_menor}")
